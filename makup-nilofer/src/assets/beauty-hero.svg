@@ -1,0 +1,26 @@
+<svg width="720" height="760" viewBox="0 0 720 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="760" rx="42" fill="#FFF8F6"/>
+  <circle cx="560" cy="124" r="72" fill="#F8D3DF"/>
+  <circle cx="150" cy="630" r="92" fill="#FBE6CE"/>
+  <path d="M112 170C112 120.294 152.294 80 202 80H524C573.706 80 614 120.294 614 170V582C614 631.706 573.706 672 524 672H202C152.294 672 112 631.706 112 582V170Z" fill="white" stroke="#F4D7DD" stroke-width="2"/>
+  <rect x="180" y="146" width="182" height="20" rx="10" fill="#F9E6EB"/>
+  <rect x="180" y="186" width="130" height="12" rx="6" fill="#F7CDD7"/>
+  <rect x="180" y="235" width="366" height="230" rx="28" fill="url(#paint0_linear_1_2)"/>
+  <circle cx="320" cy="322" r="66" fill="#FFE4EB"/>
+  <path d="M270 362C283.938 331.209 314.499 310 349.5 310C384.501 310 415.062 331.209 429 362" stroke="#A45A6F" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="297" cy="304" r="11" fill="#A45A6F"/>
+  <circle cx="402" cy="304" r="11" fill="#A45A6F"/>
+  <path d="M322 338C330.333 345 339.667 348.5 350 348.5C360.333 348.5 369.667 345 378 338" stroke="#D06C86" stroke-width="7" stroke-linecap="round"/>
+  <rect x="180" y="490" width="250" height="16" rx="8" fill="#F4D7DD"/>
+  <rect x="180" y="520" width="306" height="12" rx="6" fill="#F7E8DA"/>
+  <rect x="180" y="550" width="216" height="12" rx="6" fill="#F7E8DA"/>
+  <rect x="470" y="496" width="76" height="76" rx="20" fill="#FCF1F3"/>
+  <rect x="492" y="516" width="32" height="36" rx="10" fill="#D57A94"/>
+  <path d="M504 508H512C517.523 508 522 512.477 522 518V518H494V518C494 512.477 498.477 508 504 508Z" fill="#2B2124"/>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="180" y1="235" x2="546" y2="465" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0F4"/>
+      <stop offset="1" stop-color="#FDE8D2"/>
+    </linearGradient>
+  </defs>
+</svg>
