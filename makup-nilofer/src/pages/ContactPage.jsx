@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaFacebookF, FaInstagram, FaPinterestP, FaWhatsapp } from 'react-icons/fa6'
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa6'
 import { FiMail, FiPhone } from 'react-icons/fi'
 import PageBanner from '../components/PageBanner'
 import { contactDetails } from '../data/siteData'
@@ -18,7 +18,7 @@ const ContactPage = () => {
 
     const whatsappNumber = (contactDetails.whatsapp || contactDetails.phone).replace(/\D/g, '')
     const whatsappMessage = [
-      'Hello Nilofer, I would like to book a makeup appointment.',
+      'Hello nilofar, I would like to book a makeup appointment.',
       `Name: ${formData.name}`,
       `Email: ${formData.email}`,
       `Message: ${formData.message}`,
@@ -32,7 +32,7 @@ const ContactPage = () => {
   }
 
   const directWhatsappLink = `https://wa.me/${contactDetails.whatsapp}?text=${encodeURIComponent(
-    'Hello Nilofer, I want to enquire about a makeup booking.'
+    'Hello nilofar, I want to enquire about a makeup booking.'
   )}`
 
   return (
@@ -131,7 +131,7 @@ const ContactPage = () => {
             <div className="mt-4 flex gap-3 text-stone-700">
               <a href="https://instagram.com" target="_blank" rel="noreferrer" className="rounded-full bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:text-rose-600"><FaInstagram /></a>
               <a href="https://facebook.com" target="_blank" rel="noreferrer" className="rounded-full bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:text-rose-600"><FaFacebookF /></a>
-              <a href="https://pinterest.com" target="_blank" rel="noreferrer" className="rounded-full bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:text-rose-600"><FaPinterestP /></a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="rounded-full bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:text-rose-600"><FaYoutube /></a>
             </div>
           </div>
         </aside>

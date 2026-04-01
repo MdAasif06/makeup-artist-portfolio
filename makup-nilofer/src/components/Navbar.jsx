@@ -21,7 +21,7 @@ const Navbar = () => {
             N
           </span>
           <div>
-            <p className="font-serif text-xl text-stone-900">Nilofer Beauty</p>
+            <p className="font-serif text-xl text-stone-900">Nilofar Makeover</p>
             <p className="text-xs uppercase tracking-[0.3em] text-stone-500">Makeup Artist</p>
           </div>
         </Link>

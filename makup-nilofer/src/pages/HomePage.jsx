@@ -1,14 +1,19 @@
-import { motion as Motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
-import beautyHero from '../assets/beauty-hero.svg'
-import SectionHeading from '../components/SectionHeading'
-import ServiceCard from '../components/ServiceCard'
-import { contactDetails, featuredStats, services, testimonials } from '../data/siteData'
+import { motion as Motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import beautyHero from "../assets/9th.jpeg";
+import SectionHeading from "../components/SectionHeading";
+import ServiceCard from "../components/ServiceCard";
+import {
+  contactDetails,
+  featuredStats,
+  services,
+  testimonials,
+} from "../data/siteData";
 
 const HomePage = () => {
   const bookingLink = `https://wa.me/${contactDetails.whatsapp}?text=${encodeURIComponent(
-    'Hello Nilofer, I want to book a makeup appointment.'
-  )}`
+    "Hello nilofar, I want to book a makeup appointment.",
+  )}`;
 
   return (
     <div className="space-y-20 pb-8">
@@ -22,11 +27,13 @@ const HomePage = () => {
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-500">
             Luxury Beauty Experience
           </p>
-          <h1 className="mt-4 max-w-xl font-serif text-5xl leading-tight text-stone-900 sm:text-6xl">
+          <h1 className="mt-4 max-w-xl font-serif text-5xl leading-tight text-stone-900 sm:text-6xl font-extrabold">
             Timeless makeup artistry for your most special moments.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-stone-600 sm:text-lg">
-            Nilofer creates soft, glowing, photo-ready looks for brides, parties, and editorial shoots — with a signature finish that feels elevated and effortless.
+            Nilofar creates soft, glowing, photo-ready looks for brides,
+            parties, and editorial shoots — with a signature finish that feels
+            elevated and effortless.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -48,8 +55,13 @@ const HomePage = () => {
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {featuredStats.map((item) => (
-              <div key={item.label} className="rounded-2xl border border-white/70 bg-white/70 p-4 shadow-sm backdrop-blur">
-                <p className="text-2xl font-semibold text-stone-900">{item.value}</p>
+              <div
+                key={item.label}
+                className="rounded-2xl border border-white/70 bg-white/70 p-4 shadow-sm backdrop-blur"
+              >
+                <p className="text-2xl font-semibold text-stone-900">
+                  {item.value}
+                </p>
                 <p className="mt-1 text-sm text-stone-600">{item.label}</p>
               </div>
             ))}
@@ -66,11 +78,15 @@ const HomePage = () => {
           <img
             src={beautyHero}
             alt="Elegant beauty-themed banner for the makeup artist portfolio"
-            className="mx-auto w-full max-w-md rounded-[2rem] border border-white/80 bg-white/80 shadow-[0_25px_70px_-35px_rgba(190,24,93,0.45)]"
+            className="w-full h-[550px] object-cover rounded-2xl"
           />
           <div className="absolute bottom-4 left-4 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur">
-            <p className="text-xs uppercase tracking-[0.3em] text-stone-500">Available for</p>
-            <p className="font-semibold text-stone-900">Bridal • Events • Shoots</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-stone-500">
+              Available for
+            </p>
+            <p className="font-semibold text-stone-900">
+              Bridal • Events • Shoots
+            </p>
           </div>
         </Motion.div>
       </section>
@@ -84,7 +100,11 @@ const HomePage = () => {
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.slice(0, 3).map((service, index) => (
-            <ServiceCard key={service.title} service={service} featured={index === 0} />
+            <ServiceCard
+              key={service.title}
+              service={service}
+              featured={index === 0}
+            />
           ))}
         </div>
       </section>
@@ -92,19 +112,22 @@ const HomePage = () => {
       <section className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
         <div className="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
           <SectionHeading
-            eyebrow="Why Clients Choose Nilofer"
+            eyebrow="Why Clients Choose nilofar"
             title="Refined beauty with a calm, personalized experience"
             description="From the first consultation to the final touch-up, every look is tailored to your features, outfit, and event style."
           />
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              'Personalized skin prep and shade matching',
-              'Premium, long-wear products for comfort',
-              'Elegant glam that still feels like you',
-              'A warm, punctual, and stress-free booking experience',
+              "Personalized skin prep and shade matching",
+              "Premium, long-wear products for comfort",
+              "Elegant glam that still feels like you",
+              "A warm, punctual, and stress-free booking experience",
             ].map((point) => (
-              <div key={point} className="rounded-2xl bg-rose-50 p-4 text-sm leading-6 text-stone-700">
+              <div
+                key={point}
+                className="rounded-2xl bg-rose-50 p-4 text-sm leading-6 text-stone-700"
+              >
                 {point}
               </div>
             ))}
@@ -120,16 +143,23 @@ const HomePage = () => {
 
           <div className="mt-8 space-y-4">
             {testimonials.map((testimonial) => (
-              <blockquote key={testimonial.name} className="rounded-2xl bg-white/90 p-5 shadow-sm">
-                <p className="text-sm leading-6 text-stone-700">“{testimonial.quote}”</p>
-                <footer className="mt-3 text-sm font-semibold text-stone-900">— {testimonial.name}</footer>
+              <blockquote
+                key={testimonial.name}
+                className="rounded-2xl bg-white/90 p-5 shadow-sm"
+              >
+                <p className="text-sm leading-6 text-stone-700">
+                  “{testimonial.quote}”
+                </p>
+                <footer className="mt-3 text-sm font-semibold text-stone-900">
+                  — {testimonial.name}
+                </footer>
               </blockquote>
             ))}
           </div>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
