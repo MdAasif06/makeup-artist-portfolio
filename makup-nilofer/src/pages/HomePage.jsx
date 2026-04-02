@@ -99,7 +99,7 @@ const HomePage = () => {
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {services.slice(0, 3).map((service, index) => (
+          {services.slice(0, 6).map((service, index) => (
             <ServiceCard
               key={service.title}
               service={service}
@@ -117,7 +117,7 @@ const HomePage = () => {
             description="From the first consultation to the final touch-up, every look is tailored to your features, outfit, and event style."
           />
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className=" mt-8 grid gap-4 sm:grid-cols-2">
             {[
               "Personalized skin prep and shade matching",
               "Premium, long-wear products for comfort",
@@ -126,7 +126,7 @@ const HomePage = () => {
             ].map((point) => (
               <div
                 key={point}
-                className="rounded-2xl bg-rose-50 p-4 text-sm leading-6 text-stone-700"
+                className="  rounded-2xl bg-rose-50 p-4 text-sm leading-6 text-stone-700"
               >
                 {point}
               </div>
